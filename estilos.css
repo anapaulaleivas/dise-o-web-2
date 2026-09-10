@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+:root{
+    --Primary:#e27297
+}
+
+h1, h2{
+    color: #e27297;
+    font-family: Playfair display;
+}
+
+p{
+    font-family: Bricolage Grotesque;
+}
+
+
+header{
+    text-align: center;
+    background-color: rgb(218, 216, 214);
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+header img{
+    width: 100px;
+}
+
+header nav{
+    padding-bottom: 20px;
+    border-bottom: 5px var(--Primary);
+    font-family: Inter;
+    font-weight: bold;
+    
+}
+
+header a{
+    color: var(--Primary)
+}
+
+#tienda{
+    padding: 2em;
+}
+
+#tienda h1{
+    2em;
+    text-align: center;
+}
+
+#tienda article{
+    margin: 1em;
+    padding: 1em;
+    border-radius: 15px;
+    border: 1px solid var(--Primary);
+}
+
+#tienda a{
+    font-family: bricolage grotesque;
+    background-color: #e27297;
+    color: white;
+    border-radius: 15px;
+    padding:10px;
+    display: inline-block;
+    margin-top: 1em;
+}
+
+#tienda img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+@media all and (min-width:768px){
+    header{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+    header nav{
+        border-bottom: none;
+        font-size: 1.2em;
+    }
+
+    #tienda .contenedor{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1em;
+    }
+
+    #tienda article{
+        flex-basis: 300px;
+        flex-grow: 1;
+        margin-bottom: 0;
+    }
+}
+
+@media all and (min-width 1200px) {
+    .contenedor{
+        max-width: 500px;
+        margin: auto;
+    }
+
+    h1{
+        font-size: 2em;
+    }
+}
